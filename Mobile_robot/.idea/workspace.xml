@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7991de05-390e-44a3-b2aa-aadc3355b0ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/rbx1/rbx1_bringup/config/fake_pi_arbotix.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/rbx1/rbx1_bringup/config/fake_pi_arbotix.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_astra_camera/56-orbbec-usb.rules" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_astra_camera/56-orbbec-usb.rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_astra_camera/launch/astra_rgb.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_astra_camera/launch/astra_rgb.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_astra_camera/launch/astraprosm.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_astra_camera/launch/astraprosm.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_astra_launch/launch/astra_rgb.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_astra_launch/launch/astra_rgb.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_astra_launch/launch/astraprosm.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_astra_launch/launch/astraprosm.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teleop_twist_keyboard/teleop_twist_keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/teleop_twist_keyboard/teleop_twist_keyboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usb_cam/launch/usb_cam-test.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/usb_cam/launch/usb_cam-test.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usb_cam/nodes/usb_cam_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/usb_cam/nodes/usb_cam_node.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/depth2laser" />
+  </component>
+  <component name="ProjectId" id="1Wpp8jkkNwkh7ynRhydZLL34YJp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/my_odom_publisher" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="path_drawing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mobile_robot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/my_odom_publisher/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/my_odom_publisher/src/path_drawing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.path_drawing" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7991de05-390e-44a3-b2aa-aadc3355b0ef" name="Default Changelist" comment="" />
+      <created>1579856232054</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579856232054</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1582618762168">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1582618762168" />
+    <state width="1832" height="296" key="GridCell.Tab.0.bottom" timestamp="1582618208206">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1832" height="296" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1582618208206" />
+    <state width="1832" height="296" key="GridCell.Tab.0.center" timestamp="1582618208206">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1832" height="296" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1582618208206" />
+    <state width="1832" height="296" key="GridCell.Tab.0.left" timestamp="1582618208205">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1832" height="296" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1582618208205" />
+    <state width="1832" height="296" key="GridCell.Tab.0.right" timestamp="1582618208206">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state width="1832" height="296" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1582618208206" />
+    <state x="486" y="174" key="SettingsEditor" timestamp="1582617968951">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1582617968950" />
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1582618714202">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582618714202" />
+    <state x="661" y="216" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582618089576">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="661" y="216" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1582618089576" />
+  </component>
+</project>

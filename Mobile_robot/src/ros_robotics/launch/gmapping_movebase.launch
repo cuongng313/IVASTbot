@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- send urdf to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ros_robotics)/urdf/vast01_Omni_IMU.xacro'" />
+
+  
+  <arg name="world" default="empty"/>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find ros_robotics)/world/model.world"/> 
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+   <node name="rosbot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
+          args="-urdf -param robot_description -x 0 -y 0 -z 0 -model vast_robot" />
+   
+  <include file="$(find ros_robotics)/launch/vast01.launch"></include>
+  <!--include file="$(find ros_robotics)/launch/robot_control.launch"></include-->
+  
+  <include file="$(find gmapping)/launch/slam_simu.launch"></include> 
+
+
+  <node pkg="move_base" type="move_base" respawn="false" 
+        name="move_base" output="screen">
+        
+	<rosparam file="$(find ros_robotics)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+	<rosparam file="$(find ros_robotics)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+	<rosparam file="$(find ros_robotics)/config/local_costmap_params.yaml" command="load" />
+	<rosparam file="$(find ros_robotics)/config/global_costmap_params.yaml" command="load" />
+	<rosparam file="$(find ros_robotics)/config/teb_local_planner_omni_params.yaml" command="load" />
+	
+	<param name="base_global_planner" type="string" value="global_planner/GlobalPlanner" />
+	<param name="planner_frequency" value="2.5" />
+	<param name="controller_frequency" type="double" value="5" />
+	
+
+
+  </node>
+  
+  <!-- Show in Rviz     -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_robotics)/rviz/vast01.rviz" required="true" output="screen"/>  
+
+</launch>

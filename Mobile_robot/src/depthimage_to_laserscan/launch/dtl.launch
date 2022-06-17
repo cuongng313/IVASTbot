@@ -1,0 +1,9 @@
+<launch>
+<node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" >
+	<remap from="image" to="/camera/depth/image_raw"/>
+	<remap from="camera_info" to="/camera/depth_registered/camera_info" />
+    	<remap from="scan" to="/scan" />
+    	<param name="output_frame_id" value="camera_link" />
+        <remap from="image" to="camera/depth/image_raw" />
+</node>
+</launch>

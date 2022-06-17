@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <rosparam command="load" file="$(find ros_robotics)/config/vast_controller.yaml" />
+
+<!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="vast_robot" args="joint1_position_controller joint2_position_controller joint3_position_controller joint4_position_controller "/>
+
+ <!-- convert joint states to TF transforms for rviz, etc -->
+
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/vast_robot/joint_states" />
+
+ </node>
+
+</launch>
+
+
+
+
+
+
+
+
+
+
+
+
+

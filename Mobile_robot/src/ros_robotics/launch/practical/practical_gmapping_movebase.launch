@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- send urdf to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro inorder '$(find ros_robotics)/urdf/vast01_omni_practical.urdf.xacro'" />
+   
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<param name="publish_frequency" type="double" value="20.0"/> 
+
+
+ <include file="$(find rplidar_ros)/launch/rplidar.launch"></include>
+ <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch"></include> 
+ <include file="$(find gmapping)/launch/slam.launch"></include>
+
+  <node pkg="move_base" type="move_base" respawn="false" 
+        name="move_base" output="screen">
+        
+	<rosparam file="$(find ros_robotics)/practical_config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+	<rosparam file="$(find ros_robotics)/practical_config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+	<rosparam file="$(find ros_robotics)/practical_config/local_costmap_params.yaml" command="load" />
+	<rosparam file="$(find ros_robotics)/practical_config/global_costmap_params.yaml" command="load" />
+	<rosparam file="$(find ros_robotics)/practical_config/teb_local_planner_omni_params.yaml" command="load" />
+	<param name="base_global_planner" type="string" value="global_planner/GlobalPlanner"/>
+	<param name="planner_frequency" value="2.5" />
+	<param name="controller_frequency" value="5.0" />
+   </node>
+  <!-- Show in Rviz -->    
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_robotics)/rviz/vast01.rviz" required="true" output="screen"/>  
+
+</launch>

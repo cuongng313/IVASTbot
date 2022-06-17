@@ -1,0 +1,49 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_footprint
+  update_frequency: 2.0
+  publish_frequency: 2.0
+
+  static_map: true
+  rolling_window: false
+  width: 256.0
+  height: 256.0 
+  resolution: 0.5
+  inflation_radius: 12.0
+
+  obstacle_layer:
+    obstacle_range: 10.0
+    raytrace_range: 12.0
+    observation_sources: scan_laser 
+    scan_laser: 
+      sensor_frame: laser
+      data_type: LaserScan
+      topic: /scan
+      marking: true
+      clearing: true
+  plugins:
+    - 
+      name: obstacle_layer
+      type: "costmap_2d::ObstacleLayer"
+    - 
+      name: static_map
+      type: "costmap_2d::StaticLayer"
+    - 
+      name: inflation_layer
+      type: "costmap_2d::InflationLayer"
+    -
+      name: rgbd_obstacle_layer
+      type: "costmap_2d::VoxelLayer"
+  
+  static_map:
+      lethal_cost_threshold: 70
+      static_map: true
+      track_unknown_space: false
+      unknown_cost_value: 1
+      trinary_costmap: false
+      use_maximum: true
+
+   
+
+
+

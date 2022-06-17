@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+<!--
+  <include file="$(find my_odom_publisher)/launch/Odometry.launch"></include > -->
+
+  <!-- node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen" clear_params="true">
+      <rosparam file="$(find skid_steer_bot)/config/fake_turtlebot_arbotix.yaml" command="load" />
+      <param name="sim" value="true"/>
+  </node>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<param name="publish_frequency" type="double" value="20.0" / -->
+
+  <!-- Send fake joint values-->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="false"/>
+
+  </node>
+
+  <!-- Send robot states to tf  -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/> 
+
+
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+	<node name="set_goal" pkg="my_odom_publisher" type="set_goal.py" output="screen" />
+	
+</launch>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/src/depth2laser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rbx1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rf2o_laser_odometry" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/robot_localization" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/robot_pose_ekf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/ros_astra_camera" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/ros_astra_launch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rosbot_description" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rosserial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rosserial_stm32" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rplidar_ros" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/slam_gmapping" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/teleop_twist_keyboard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/usb_cam" vcs="Git" />
+  </component>
+</project>

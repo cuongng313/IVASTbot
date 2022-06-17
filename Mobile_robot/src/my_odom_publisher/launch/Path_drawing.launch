@@ -1,0 +1,4 @@
+<launch>
+	<node name="path_draw" pkg="my_odom_publisher" type="path_drawing.py" output="screen" />
+	
+</launch>

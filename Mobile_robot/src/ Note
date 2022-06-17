@@ -1,0 +1,13 @@
+Mô phỏng và chạy code simulink:
+* Phần mô hình hóa URDF file: 
+	- Mô hình robot và map vẫn to hơn nhiều so với mô hình thật.
+	- plugin mô phỏng điều khiển chưa chuẩn nhưng cũng ko cần thiết
+	- Đã làm với 2 loại bánh là Omni và Mecanum
+	- Chưa sử dụng nhiều đến IMU (do mô phỏng cmd_vel điều khiển trực tiếp odom bình thường)
+	- Đã chạy được odom với IMU
+* Phần navigation:
+	- Slam: Dùng gmapping đã ok
+	- Move_base: 
+		+ Phần cost_map đã điều chỉnh các tham số tương đối phù hợp và các lớp layer khá ổn 
+		+ Đã làm đến rgbd_layer (quét bằng cam các obs thấp hơn vật) nhg tham số chưa tối ưu
+		+ Phần planner đang sử dụng local planner: TEB khá tối ưu nhưng chưa khai thác được hết

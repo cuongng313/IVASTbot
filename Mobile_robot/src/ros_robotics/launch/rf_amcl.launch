@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+
+ <!-- send urdf to param server -->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ros_robotics)/urdf/vast01_Omni_IMU.xacro'" />
+
+  
+  <arg name="world" default="empty"/>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find ros_robotics)/world/square.world"/> 
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+   <node name="rosbot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
+          args="-urdf -param robot_description -x 0 -y 0 -z 0.1 -model vast_robot" />
+   
+  <include file="$(find ros_robotics)/launch/vast01.launch"></include>
+  <include file="$(find turtlebot3_dqn)/launch/turtlebot3_dqn_stage_1.launch"></include> 
+  <!--include file="$(find gmapping)/launch/slam.launch"></include--> 
+
+        		
+  
+  <!-- Show in Rviz      
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_robotics)/rviz/vast01.rviz" required="true" output="screen"/> --> 
+
+</launch>
